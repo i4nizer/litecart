@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vmod>
+  <name>Minicart Overlay 1</name>
+  <version/>
+  <description>Minicart Overlay</description>
+  <author>Jack Maessen</author>
+
+  <file name="includes/functions/func_form.inc.php">
+
+    <operation method="bottom" type="multiline" onerror="warning">
+
+      <insert><![CDATA[
+  function form_draw_overlay_cart_number_field($name, $value=true, $min=null, $max=null, $parameters='') {
+    if ($value === true) $value = (int)form_reinsert_value($name);
+
+    if ($value != '') {
+      $value = floor($value);
+    }
+
+    return '<input '. (!preg_match('#class="([^"]+)?"#', $parameters) ? 'class="form-control"' : '') .' type="number" name="'. functions::escape_html($name) .'" value="'. functions::escape_html($value) .'" data-type="overlaycartnumber"'. (($min !== null) ? ' min="'. (int)$min .'"' : '') . (($max !== null) ? ' max="'. (int)$max .'"' : '') . (($parameters) ? ' ' . $parameters : '') . (!preg_match('#step="([^"]+)?"#', $parameters) ? ' step="any"' : '') .' />';
+  }
+      ]]></insert>
+    </operation>
+  </file>
+
+  <file name="includes/templates/*.catalog/pages/product.inc.php">
+
+    <operation method="bottom" type="multiline" onerror="warning">
+
+      <insert><![CDATA[
+<script>
+// click add product, show header-quantity; red circle
+$('button[name="add_cart_product"]').on('click', function() {
+	$('.header-quantity').show();
+});
+</script>
+      ]]></insert>
+    </operation>
+  </file>
+
+  <file name="includes/templates/*.catalog/views/box_cart.inc.php">
+
+    <operation method="all" type="multiline" onerror="warning">
+
+      <insert><![CDATA[
+<style>
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.shopping-cart {
+  z-index: 99;
+  background: #fff;
+  width: 400px;
+  font-size: 14px;
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  border-radius: 8px;
+  padding: 15px 15px 15px 15px;
+  /*overflow: hidden;*/
+  /*box-shadow: 0 2px 5px 0 rgba(0,0,0,.26)!important;*/
+
+  box-shadow: 0 0 24px 0 #333333 !important;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  opacity: 0;
+  -webkit-transform-origin: right top 0;
+  -webkit-transform: scale(0);
+  transform-origin: right top 0;
+  transform: scale(0);
+  &.active {
+    opacity: 1;
+    -webkit-transform-origin: right top 0;
+    -webkit-transform: scale(1);
+    transform-origin: right top 0;
+    transform: scale(1);
+  }
+  .shopping-cart-header {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 15px;
+
+    .shopping-cart-total {
+      float: right;
+    }
+  }
+
+}
+
+.shopping-cart:after {
+	bottom: 100%;
+	right: 65px;
+	border: solid transparent;
+	content: " ";
+
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+	background: transparent;
+	top: -36px;
+
+}
+
+.shopping-cart-content {
+	max-height: 500px;
+	overflow-y: auto;
+        margin-top: 36px;
+
+}
+
+@media only screen and (max-width: 600px) {
+	.shopping-cart {
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 992px)  {
+    .shopping-cart:after {
+        right: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .shopping-cart:after {
+        right: 55px;
+    }
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section#box-checkout-overlay-cart {
+    margin-top: 5px;
+}
+.featherlight-close {
+	 display: block;
+	right: 15px;
+
+	position: relative;
+	cursor: pointer;
+	font-size: 25px;
+	float: right;
+}
+
+.btn-proceed-checkout {
+	position: relative;
+	color: #fff !important;
+	width: 100%;
+}
+
+#box-checkout-overlay-cart .btn {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.input-group-sm>.form-control, .input-group-sm>.form-select, .input-group-sm>.input-group-text {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    border-radius: .2rem;
+}
+.overlay-row {
+  padding: 8px;
+  background: var(--input-background-color);
+  border-radius: 8px;
+  grid-gap: 0px !important;
+
+}
+
+#cart-overlay .badge {
+    background: #c90000;
+    border-radius: 2rem;
+    padding: 0.25em 0em;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: -4px;
+    right: -5px;
+    width: 2em;
+    animation: pulsating 1.5s linear infinite;
+    font-size: 10px;
+	border-bottom: 1px solid #333;
+}
+.card-header {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f6f6f6;
+}
+.shopping-cart-content .text-center {
+    padding-top: 20px;
+}
+a#cart-overlay {
+	text-decoration: none;
+}
+.card-footer.subtotal.text-end {
+    margin-right: 10px;
+	margin-bottom: 15px;
+}
+
+</style>
+
+<a id="cart" class="text-center" href="#<?php //echo functions::escape_html($link); ?>">
+  <!--<img class="image" src="/includes/templates/default.admin/images/<?php echo !empty($num_items) ? 'cart_filled.svg' : 'cart.svg'; ?>" alt="" />-->
+  <div class="navbar-icon"><?php echo functions::draw_fonticon('fa-shopping-basket'); ?></div>
+  <small class="hidden-xs"><?php echo language::translate('title_cart', 'Cart'); ?></small>
+  <div class="badge quantity header-quantity"><?php echo $num_items ? $num_items : ''; ?></div>
+</a>
+
+<div class="shopping-cart">
+
+	<div class="featherlight-close-icon featherlight-close" aria-label="Close">✖</div>
+
+	<div class="shopping-cart-content"></div>
+
+</div>
+
+<script>
+$('.shopping-cart').click(function(e) {
+	e.stopPropagation();
+});
+
+$(document).on('click', function() {
+    var $item = $(".shopping-cart");
+	if ($item.hasClass("active")) {
+	  $item.removeClass("active");
+	}
+});
+
+$('.shopping-cart').each(function() {
+	var delay = $(this).index() * 50 + 'ms';
+	$(this).css({
+		'-webkit-transition-delay': delay,
+		'-moz-transition-delay': delay,
+		'-o-transition-delay': delay,
+		'transition-delay': delay
+	});
+});
+
+$('#addtocart').click(function(e) {
+	e.stopPropagation();
+	$(".shopping-cart").toggleClass("active");
+});
+
+$('.featherlight-close').on('click', function(e) {
+   $('.shopping-cart').removeClass('active');
+});
+
+$('#cart').on('click', function(e) {
+	e.stopPropagation();
+	$(".shopping-cart").toggleClass("active");
+	// fetch data for overlay cart
+	$.ajax({
+		url: '<?php echo document::ilink('checkout_overlay'); ?>',
+		type: "POST",
+		cache: false,
+		success: function (data) {
+			$('.shopping-cart-content').html(data).hide().fadeIn('slow');
+			// add proceed-checkout button
+
+			$('.shopping-cart-content').append('<a href="<?php echo functions::escape_html($link); ?>" class="btn btn-success btn-proceed-checkout" type="button"><?php echo language::translate('title_proceed_checkout', 'Proceed Checkout'); ?></a>');
+
+		},
+
+	});
+
+});
+</script>
+
+      ]]></insert>
+    </operation>
+  </file>
+</vmod>

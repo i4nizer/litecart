@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vmod>
+  <name>Minicart overlay  switch interface</name>
+  <version/>
+  <description>Minicart overlay switch interface</description>
+  <author>Jack Maessen</author>
+
+  <file name="admin/vmods.app/vmods.inc.php">
+
+    <operation method="replace" type="multiline" onerror="warning">
+      <find><![CDATA[
+      foreach ($_POST['vmods'] as $vmod) {
+
+        if (!empty($_POST['enable'])) {
+	  if (!is_file(FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.disabled')) continue;
+          rename(FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.disabled', FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.xml');
+		} else {
+		  if (!is_file(FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.xml')) continue;
+		  rename(FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.xml', FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.disabled');
+		}
+	  }
+      ]]></find>
+
+      <insert><![CDATA[
+foreach ($_POST['vmods'] as $vmod) {
+
+	if (!empty($_POST['enable'])) { // if chosen enable
+
+		if($vmod == 'minicart_overlay_1.disabled') {
+			if (file_exists($file = FS_DIR_STORAGE . 'vmods/minicart_overlay_2.xml')) {
+				rename($file, preg_replace('#\.xml$#', '.disabled', $file));
+			}
+		}
+		elseif($vmod == 'minicart_overlay_2.disabled') {
+			if (file_exists($file = FS_DIR_STORAGE . 'vmods/minicart_overlay_1.xml')) {
+			   rename($file, preg_replace('#\.xml$#', '.disabled', $file));
+			}
+		}
+		elseif (!is_file(FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.disabled')) continue;
+		rename(FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.disabled', FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.xml');
+
+	} else { // if chosen disable
+                if($vmod == 'minicart_overlay_switch_interface.xml') {
+		    throw new Exception(language::translate('error_changes_saved', 'You can\'t set this vmod to disabled'));
+		    header('Location: '. document::link());
+		    exit;
+		}
+
+		if (!is_file(FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.xml')) continue;
+		rename(FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.xml', FS_DIR_STORAGE . 'vmods/' . pathinfo($vmod, PATHINFO_FILENAME) .'.disabled');
+	}
+}
+      ]]></insert>
+    </operation>
+  </file>
+</vmod>

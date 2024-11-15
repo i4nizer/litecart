@@ -1,0 +1,435 @@
+[15-Oct-2024 09:31:27 Asia/Manila] Fatal error: 1054 - Unknown column 'email_confirm_token' in 'field list'
+update lc_customers set email_confirm_token = '13151545c21031b7edf60c7c8970ebc1' where id = 1
+ in ~/includes/library/lib_database.inc.php on line 177
+ ← ~/pages/create_account.inc.php on line 133 in query()
+ ← ~/includes/library/lib_route.inc.php on line 125 in include()
+ ← ~/index.php on line 51 in process()
+Request: POST /litecart/create_account HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/create_account
+
+[15-Oct-2024 09:54:26 Asia/Manila] Deprecated: strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in ~/admin/reports.app/most_shopping_customers.inc.php on line 14
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=most_shopping_customers HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=most_sold_products
+
+[15-Oct-2024 09:54:32 Asia/Manila] Deprecated: strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in ~/admin/reports.app/most_shopping_customers.inc.php on line 14
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=most_shopping_customers HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=most_shopping_customers
+
+[15-Oct-2024 09:54:36 Asia/Manila] Deprecated: strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in ~/admin/reports.app/most_shopping_customers.inc.php on line 14
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=most_shopping_customers HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=most_sold_products
+
+[15-Oct-2024 09:55:31 Asia/Manila] Deprecated: strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in ~/admin/reports.app/most_shopping_customers.inc.php on line 14
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=most_shopping_customers HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=most_sold_products
+
+[15-Oct-2024 09:55:37 Asia/Manila] Deprecated: strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in ~/admin/reports.app/most_shopping_customers.inc.php on line 14
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=most_shopping_customers HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=most_sold_products
+
+[15-Oct-2024 09:57:36 Asia/Manila] Deprecated: strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in ~/admin/reports.app/most_shopping_customers.inc.php on line 14
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=most_shopping_customers HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=most_sold_products
+
+[15-Oct-2024 10:12:00 Asia/Manila] Fatal error: Call to undefined function csv_encode() in ~/admin/reports.app/monthly_sales.inc.php on line 70
+Request: GET /litecart/admin/?app=reports&doc=monthly_sales&date_from=2024-01-01&date_to=2024-10-15&download=Download HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 10:12:04 Asia/Manila] Fatal error: Call to undefined function csv_encode() in ~/admin/reports.app/monthly_sales.inc.php on line 70
+Request: GET /litecart/admin/?app=reports&doc=monthly_sales&date_from=2024-01-01&date_to=2024-10-15&download=Download HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 10:12:09 Asia/Manila] Fatal error: Call to undefined function csv_encode() in ~/admin/reports.app/monthly_sales.inc.php on line 70
+Request: GET /litecart/admin/?app=reports&doc=monthly_sales&date_from=2024-01-01&date_to=2024-10-15&download=Download HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 10:16:20 Asia/Manila] Warning: Undefined variable $filename in ~/admin/reports.app/monthly_sales.inc.php on line 73
+Request: GET /litecart/admin/?app=reports&doc=monthly_sales&date_from=2024-01-01&date_to=2024-10-15&download=Download HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 10:20:30 Asia/Manila] Warning: Array to string conversion in ~/admin/reports.app/monthly_sales.inc.php on line 77
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=monthly_sales&date_from=2024-01-01&date_to=2024-10-15&download=Download HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:03:56 Asia/Manila] Fatal error: 1146 - Table 'litecart.lc_orders o' doesn't exist
+SELECT * FROM `lc_orders o`
+INNER JOIN lc_order_statuses os ON os.id = o.order_status_id
+WHERE os.state = 'completed' or os.state = 'delivered'
+and o.date_created >= '2024-01-01 00:00:00'
+and o.date_created Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:05:29 Asia/Manila] Fatal error: 1054 - Unknown column 'year_month' in 'order clause'
+SELECT * FROM lc_orders o
+INNER JOIN lc_order_statuses os ON os.id = o.order_status_id
+WHERE os.state = 'completed' or os.state = 'delivered'
+and o.date_created >= '2024-01-01 00:00:00'
+and o.date_created Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:05:43 Asia/Manila] Fatal error: 1054 - Unknown column 'o.year_month' in 'order clause'
+SELECT * FROM lc_orders o
+INNER JOIN lc_order_statuses os ON os.id = o.order_status_id
+WHERE os.state = 'completed' or os.state = 'delivered'
+and o.date_created >= '2024-01-01 00:00:00'
+and o.date_created Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:07:20 Asia/Manila] Fatal error: Object of class mysqli_result could not be converted to string in ~/admin/reports.app/custom_sales.inc.php on line 26
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:07:48 Asia/Manila] Fatal error: Cannot use object of type mysqli_result as array in ~/admin/reports.app/custom_sales.inc.php on line 26
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:00 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:00 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 133
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:00 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 134
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:00 Asia/Manila] Fatal error: Cannot access offset of type string on string in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:01 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:01 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 133
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:01 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 134
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:01 Asia/Manila] Fatal error: Cannot access offset of type string on string in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:02 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:02 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 133
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:02 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 134
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:02 Asia/Manila] Fatal error: Cannot access offset of type string on string in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:03 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:03 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 133
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:03 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 134
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:03 Asia/Manila] Fatal error: Cannot access offset of type string on string in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:23 Asia/Manila] Warning: Timeout during retrieval in ~/includes/wrappers/wrap_http.inc.php on line 78
+ ← ~/admin/addons.widget/addons.inc.php on line 22 in call()
+ ← ~/admin/index.php on line 87 in include()
+Request: GET /litecart/admin/ HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+
+[15-Oct-2024 11:11:52 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:52 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 133
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:52 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 134
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:11:52 Asia/Manila] Fatal error: Cannot access offset of type string on string in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:01 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:01 Asia/Manila] Deprecated: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in ~/admin/reports.app/custom_sales.inc.php on line 132
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:01 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:01 Asia/Manila] Deprecated: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in ~/admin/reports.app/custom_sales.inc.php on line 132
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:01 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 133
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:01 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 134
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:01 Asia/Manila] Fatal error: Cannot access offset of type string on string in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:02 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:02 Asia/Manila] Deprecated: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in ~/admin/reports.app/custom_sales.inc.php on line 132
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:02 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:02 Asia/Manila] Deprecated: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in ~/admin/reports.app/custom_sales.inc.php on line 132
+ ← ~/admin/index.php on line 138 in include()
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:02 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 133
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:02 Asia/Manila] Warning: Trying to access array offset on value of type int in ~/admin/reports.app/custom_sales.inc.php on line 134
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:14:02 Asia/Manila] Fatal error: Cannot access offset of type string on string in ~/admin/reports.app/custom_sales.inc.php on line 132
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:15:03 Asia/Manila] Warning: Undefined array key 0 in ~/admin/reports.app/custom_sales.inc.php on line 27
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:15:08 Asia/Manila] Warning: Undefined array key 0 in ~/admin/reports.app/custom_sales.inc.php on line 27
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:18:34 Asia/Manila] Warning: Undefined array key " total_subtotal" in ~/admin/reports.app/custom_sales.inc.php on line 133
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:18:34 Asia/Manila] Warning: Undefined array key "total_shipping_fees" in ~/admin/reports.app/custom_sales.inc.php on line 134
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:18:34 Asia/Manila] Warning: Undefined array key " total_subtotal" in ~/admin/reports.app/custom_sales.inc.php on line 133
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+
+[15-Oct-2024 11:18:34 Asia/Manila] Warning: Undefined array key "total_shipping_fees" in ~/admin/reports.app/custom_sales.inc.php on line 134
+Request: GET /litecart/admin/?app=reports&doc=custom_sales HTTP/1.1
+Host: localhost
+Client: ::1 (DESKTOP-RKM47KS)
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+Referer: http://localhost/litecart/admin/?app=reports&doc=monthly_sales
+

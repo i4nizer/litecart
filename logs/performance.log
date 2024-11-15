@@ -1,0 +1,30 @@
+[13-Oct-2024 17:25:25 Asia/Manila] Long page execution time 5,174 s requesting http://localhost/litecart/admin/
+
+[14-Oct-2024 10:31:30 Asia/Manila] Long page execution time 16,970 s requesting http://localhost/litecart/admin/
+
+[14-Oct-2024 11:13:19 Asia/Manila] Long page execution time 5,475 s requesting http://localhost/litecart/
+
+[14-Oct-2024 11:27:40 Asia/Manila] Long page execution time 14,417 s requesting http://localhost/litecart/admin/
+
+[14-Oct-2024 11:27:40 Asia/Manila] Long page execution time 12,267 s requesting http://localhost/litecart/admin/
+
+[14-Oct-2024 11:30:25 Asia/Manila] Long page execution time 6,274 s requesting http://localhost/litecart/ajax/checkout_customer
+
+[2024-10-14 14:32:21 Asia/Manila] Warning: A MySQL query executed in 5.742 s.
+  Query: update lc_users
+          set date_active = '2024-10-14 14:32:15'
+          where id = 1
+          limit 1;
+
+[2024-10-14 14:35:41 Asia/Manila] Warning: A MySQL query executed in 25.504 s.
+  Query: update lc_users
+          set date_active = '2024-10-14 14:35:16'
+          where id = 1
+          limit 1;
+
+[14-Oct-2024 16:08:37 Asia/Manila] Long page execution time 5,507 s requesting http://localhost/litecart/color-pen-c-5/color-pencil-large-p-13?category_id=5&product_id=13
+
+[2024-10-14 22:57:02 UTC] A MySQL connection established in 1.656 s.
+
+[15-Oct-2024 11:11:24 Asia/Manila] Long page execution time 13,379 s requesting http://localhost/litecart/admin/
+

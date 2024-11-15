@@ -1,0 +1,203 @@
+## [2024-10-15 11:11:23] Request #######################################
+
+GET /feeds/discussions.rss HTTP/1.1
+Host: www.litecart.net
+User-Agent: LiteCart/2.5.5
+Content-Length: 0
+Connection: Close
+
+
+
+## [2024-10-15 11:11:24] Response — 9636 bytes transferred in 0.955 s ##
+
+HTTP/1.1 200 OK
+Date: Tue, 15 Oct 2024 03:11:23 GMT
+Content-Type: application/rss+xml; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+set-cookie: PHPSESSID=kf5biqduuu1kgij4n0k4f78l42; path=/; secure
+expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+pragma: no-cache
+content-security-policy: frame-ancestors 'self';
+access-control-allow-origin: https://www.litecart.net/en/
+x-frame-options: SAMEORIGIN
+x-powered-by: LiteCart.net
+vary: Accept-Encoding
+alt-svc: h3=":443"; ma=86400
+x-turbo-charged-by: LiteSpeed
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=VjNV9YwekPw6fkUyLg2Dyege8Wk%2Bj0Ve6Y8CGcaF83SuZjPo7P2qQ35V%2F2VW%2F%2FwxDZkmjMlvis59Yuc%2Bvn46PWS5nNxYDYjlkD72o4%2FB4VJvsDT%2BEe6c9243IbUEOr7Je%2FVn"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8d2c9f1898c45f48-SIN
+
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>LiteCart Forum Discussions</title>
+    <link>https://www.litecart.net/forums/index</link>
+    <description>The most recent forum activity.</description>
+    <language>en</language>
+    <item>
+      <category><![CDATA[Feature Requests and New Ideas]]></category>
+      <title><![CDATA[2FA for Admin access]]></title>
+      <link>https://www.litecart.net/en/forums/5/feature-requests-and-new-ideas/22800/2fa-for-admin-access</link>
+      <description></description>
+      <author><![CDATA[psromanov]]></author>
+      <pubDate>Mon, 14 Oct 2024 23:36:35 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[General Discussions]]></category>
+      <title><![CDATA[Live (dynamic) product count when filters are used.]]></title>
+      <link>https://www.litecart.net/en/forums/2/general-discussions/22775/live-dynamic-product-count-when-filters-are-used</link>
+      <description></description>
+      <author><![CDATA[cyber83]]></author>
+      <pubDate>Mon, 14 Oct 2024 17:39:43 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Installation and Configuration]]></category>
+      <title><![CDATA[How to remove Currency ISO code and keep the SIGN]]></title>
+      <link>https://www.litecart.net/en/forums/3/installation-and-configuration/22795/how-to-remove-currency-iso-code-and-keep-the-sign</link>
+      <description></description>
+      <author><![CDATA[ecs]]></author>
+      <pubDate>Mon, 14 Oct 2024 04:56:38 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Add-ons]]></category>
+      <title><![CDATA[I have purchased the Stripe Checkout add on but there is no link to download]]></title>
+      <link>https://www.litecart.net/en/forums/7/add-ons/22788/i-have-purchased-the-stripe-checkout-add-on-but-there-is-no-link-to-download</link>
+      <description></description>
+      <author><![CDATA[highland_crafts]]></author>
+      <pubDate>Sun, 13 Oct 2024 23:06:36 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Add-ons]]></category>
+      <title><![CDATA[We can pay for help with square]]></title>
+      <link>https://www.litecart.net/en/forums/7/add-ons/22793/we-can-pay-for-help-with-square</link>
+      <description></description>
+      <author><![CDATA[danshea]]></author>
+      <pubDate>Sun, 13 Oct 2024 15:31:24 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Add-ons]]></category>
+      <title><![CDATA[tax and shipping]]></title>
+      <link>https://www.litecart.net/en/forums/7/add-ons/22790/tax-and-shipping</link>
+      <description></description>
+      <author><![CDATA[danshea]]></author>
+      <pubDate>Sat, 12 Oct 2024 21:41:46 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Add-ons]]></category>
+      <title><![CDATA[Invalid object type in author field]]></title>
+      <link>https://www.litecart.net/en/forums/7/add-ons/22782/invalid-object-type-in-author-field</link>
+      <description></description>
+      <author><![CDATA[adamchaczka]]></author>
+      <pubDate>Fri, 11 Oct 2024 09:07:20 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Errors and Troubleshooting]]></category>
+      <title><![CDATA[smtp error using Brevo]]></title>
+      <link>https://www.litecart.net/en/forums/15/errors-and-troubleshooting/22780/smtp-error-using-brevo</link>
+      <description></description>
+      <author><![CDATA[jonas32]]></author>
+      <pubDate>Thu, 10 Oct 2024 16:28:00 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[General Discussions]]></category>
+      <title><![CDATA[Pagination click jumps up when page numbers are clicked]]></title>
+      <link>https://www.litecart.net/en/forums/2/general-discussions/22764/pagination-click-jumps-up-when-page-numbers-are-clicked</link>
+      <description></description>
+      <author><![CDATA[cyber83]]></author>
+      <pubDate>Wed, 09 Oct 2024 20:08:37 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[General Discussions]]></category>
+      <title><![CDATA[Clear all filters link]]></title>
+      <link>https://www.litecart.net/en/forums/2/general-discussions/22742/clear-all-filters-link</link>
+      <description></description>
+      <author><![CDATA[cyber83]]></author>
+      <pubDate>Wed, 09 Oct 2024 17:09:02 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Errors and Troubleshooting]]></category>
+      <title><![CDATA[[SOLVED] LC 2.6 deactivated products are still found]]></title>
+      <link>https://www.litecart.net/en/forums/15/errors-and-troubleshooting/22757/solved-lc-26-deactivated-products-are-still-found</link>
+      <description></description>
+      <author><![CDATA[fritz]]></author>
+      <pubDate>Wed, 09 Oct 2024 13:52:03 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Errors and Troubleshooting]]></category>
+      <title><![CDATA[Filter dropdown on mobile extends out of the screen width]]></title>
+      <link>https://www.litecart.net/en/forums/15/errors-and-troubleshooting/22732/filter-dropdown-on-mobile-extends-out-of-the-screen-width</link>
+      <description></description>
+      <author><![CDATA[cyber83]]></author>
+      <pubDate>Tue, 08 Oct 2024 20:19:48 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Errors and Troubleshooting]]></category>
+      <title><![CDATA[How to fix overlapping filter tokens]]></title>
+      <link>https://www.litecart.net/en/forums/15/errors-and-troubleshooting/22740/how-to-fix-overlapping-filter-tokens</link>
+      <description></description>
+      <author><![CDATA[cyber83]]></author>
+      <pubDate>Tue, 08 Oct 2024 18:56:36 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[General Discussions]]></category>
+      <title><![CDATA[Change image in options]]></title>
+      <link>https://www.litecart.net/en/forums/2/general-discussions/22750/change-image-in-options</link>
+      <description></description>
+      <author><![CDATA[daniel1983]]></author>
+      <pubDate>Tue, 08 Oct 2024 06:29:27 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Add-ons]]></category>
+      <title><![CDATA[[SOLVED] Attribution Link Removal not work on LC 2.6]]></title>
+      <link>https://www.litecart.net/en/forums/7/add-ons/22735/solved-attribution-link-removal-not-work-on-lc-26</link>
+      <description></description>
+      <author><![CDATA[fritz]]></author>
+      <pubDate>Tue, 08 Oct 2024 01:30:41 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Templates and CSS]]></category>
+      <title><![CDATA[[SOLVED] Development indications at the source code bottom]]></title>
+      <link>https://www.litecart.net/en/forums/12/templates-and-css/22746/solved-development-indications-at-the-source-code-bottom</link>
+      <description></description>
+      <author><![CDATA[fritz]]></author>
+      <pubDate>Mon, 07 Oct 2024 18:18:15 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[General Discussions]]></category>
+      <title><![CDATA[Product count on product Listing page]]></title>
+      <link>https://www.litecart.net/en/forums/2/general-discussions/22721/product-count-on-product-listing-page</link>
+      <description></description>
+      <author><![CDATA[cyber83]]></author>
+      <pubDate>Sun, 06 Oct 2024 09:17:51 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Errors and Troubleshooting]]></category>
+      <title><![CDATA[[SOLVED] Warning: Unsupported settings default_print_paper_size]]></title>
+      <link>https://www.litecart.net/en/forums/15/errors-and-troubleshooting/22711/solved-warning-unsupported-settings-default-print-paper-size</link>
+      <description></description>
+      <author><![CDATA[fritz]]></author>
+      <pubDate>Sun, 06 Oct 2024 08:06:06 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[Errors and Troubleshooting]]></category>
+      <title><![CDATA[[SOLVED] Newsletter pop-up window doesnt fit inside mobile view]]></title>
+      <link>https://www.litecart.net/en/forums/15/errors-and-troubleshooting/22713/solved-newsletter-pop-up-window-doesnt-fit-inside-mobile-view</link>
+      <description></description>
+      <author><![CDATA[cyber83]]></author>
+      <pubDate>Sun, 06 Oct 2024 00:15:16 +0000</pubDate>
+    </item>
+    <item>
+      <category><![CDATA[General Discussions]]></category>
+      <title><![CDATA[Product count under category image]]></title>
+      <link>https://www.litecart.net/en/forums/2/general-discussions/22695/product-count-under-category-image</link>
+      <description></description>
+      <author><![CDATA[cyber83]]></author>
+      <pubDate>Sat, 05 Oct 2024 17:59:11 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

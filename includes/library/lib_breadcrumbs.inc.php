@@ -1,0 +1,43 @@
+<?php
+
+  class breadcrumbs {
+
+    public static $data = [];
+
+    public static function init() {
+
+      self::add(language::translate('title_home', 'Home'), WS_DIR_APP);
+
+      event::register('prepare_output', [__CLASS__, 'prepare_output']);
+    }
+
+    public static function prepare_output() {
+
+      if (count(self::$data) > 1) {
+        $breadcrumbs = new ent_view();
+
+        $breadcrumbs->snippets['breadcrumbs'] = [];
+        foreach (self::$data as $breadcrumb) {
+          $breadcrumbs->snippets['breadcrumbs'][] = [
+            'title' => $breadcrumb['title'],
+            'link' => $breadcrumb['link'],
+          ];
+        }
+
+        document::$snippets['breadcrumbs'] = $breadcrumbs->stitch('views/breadcrumbs');
+      }
+    }
+
+    ######################################################################
+
+    public static function reset() {
+      self::$data = [];
+    }
+
+    public static function add($title, $link=null) {
+      self::$data[] = [
+        'title' => $title,
+        'link' => $link,
+      ];
+    }
+  }

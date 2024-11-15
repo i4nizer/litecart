@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vmod>
+  <name>Show Categories on Index Page</name>
+  <version>1.0</version>
+  <description>Display all your product categories on index page on separate boxes!</description>
+  <author>Lucky Akbar https://0ad.xyz</author>
+
+  <setting>
+    <title>Num Item per Category</title>
+    <description>How much item per category to be shown on each boxes</description>
+    <key>num_item</key>
+    <default_value>10</default_value>
+    <function>number()</function>
+  </setting>
+
+  <file name="includes/templates/default.catalog/pages/index.inc.php">
+
+    <operation method="after" type="multiline" onerror="cancel">
+      <find><![CDATA[
+                    <?php include vmod::check(FS_DIR_APP . 'includes/boxes/box_latest_products.inc.php'); ?>
+      ]]></find>
+
+      <insert><![CDATA[
+                 <?php include vmod::check(FS_DIR_APP . 'includes/boxes/box_show_items_from_all_categories.inc.php'); ?>
+      ]]></insert>
+    </operation>
+  </file>
+</vmod>
